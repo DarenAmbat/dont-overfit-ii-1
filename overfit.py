@@ -99,8 +99,6 @@ model_mlp.fit(x_train, y_train, epochs=20, batch_size=25)
 
 
 res = model_mlp.predict(x_test)
-print(res.shape)
-print('PREDICT: %d Actual %d' % (res[0], y_train[0]))
 
 with open('sub2.csv', "w",  newline='') as csv_file:
         writer = csv.writer(csv_file, delimiter=',')
